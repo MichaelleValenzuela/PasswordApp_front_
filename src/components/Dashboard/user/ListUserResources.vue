@@ -26,7 +26,7 @@ export default defineComponent({
     methods: {
         onDeleteResource(data: any, i: number) {
             this.$confirm.require({
-                message: `Querés eliminar el registro '${data.inputs_data.nombre_del_recurso}' ?`,
+                message: `Quieres eliminar el registro '${data.inputs_data.nombre_del_recurso}' ?`,
                 header: 'Confirmar eliminación',
                 icon: 'pi pi-info-circle',
                 rejectClass: 'p-button-text p-button-text',

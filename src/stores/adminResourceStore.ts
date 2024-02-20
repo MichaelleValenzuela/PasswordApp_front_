@@ -29,7 +29,7 @@ export const adminResourceStore = defineStore('adminResourceStore', () => {
         }
 
         if (mini_form_data_resource.value.label_input.length >= 15) {
-            $toast.error("El nombre del campo es muy largo, tenés permitido hasta un total de 15 caracteres", {
+            $toast.error("El nombre del campo es muy largo, tienes permitido hasta un total de 15 caracteres", {
                 position: 'top-right'
             });
             return;
@@ -45,7 +45,7 @@ export const adminResourceStore = defineStore('adminResourceStore', () => {
         } else {
             arrMiniDataResource.value.push({ _id: shortid.generate(), label_input: mini_form_data_resource.value.label_input, type_input: mini_form_data_resource.value.type_input });
             mini_form_data_resource.value = { _id: "", label_input: "", type_input: "text" };
-            $toast.success("Se aplicó la agregación de un nuevo campo", {
+            $toast.success("Se añadio un nuevo campo", {
                 position: 'top-right'
             });
         }
@@ -96,7 +96,7 @@ export const adminResourceStore = defineStore('adminResourceStore', () => {
                 }
 
                 if (form_data.value.name_resource.length < 5) {
-                    $toast.error("El nombre del recurso es muy corto, tenés permitido hasta un total de 30 caracteres", {
+                    $toast.error("El nombre del recurso es muy corto, tienes permitido hasta un total de 30 caracteres", {
                         position: 'top-right'
                     });
                     return;

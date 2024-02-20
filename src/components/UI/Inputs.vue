@@ -18,12 +18,6 @@ export default defineComponent({
 </script>
 
 <template>
-    <!-- 
-        Ejemplo de uso:   
-        <Inputs :mBottom="4" :classLabel="['LABEL_INPUT_AUTH']" :label_name="'Nombre'" :label_for_to_id="'nombre'"
-        :classInput="['INPUT_AUTH']" :type_input="'text'" :placeholder="'Ingresar nombre'" :minLength="10" :maxLength="30" :isTextArea="false" />
-     -->
-
     <div :style="{ marginBottom: mBottom + '%' }">
 
         <LabelInputs :class="classLabel" :label_name="label_name" :for="label_for_to_id" />

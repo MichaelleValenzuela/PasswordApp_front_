@@ -47,12 +47,7 @@ export default defineComponent({
     </div>
     <div class="flex flex-row app_main_content">
         <SlotApp v-slot:LAYOUT_APP_CONTENT>
-            <div class="basis-2/5 LAYOUT_APP_SIDE_LEFT_ADMIN">
-                <!-- <div class="dash_title_welcome">
-                    <span style="text-transform: uppercase;">{{ DECODE_USER.isAdmin ? "Administrador" :
-                        "Hola " +
-                        DECODE_USER.name }}</span>
-                </div> -->
+            <div class="basis-2/5 LAYOUT_APP_SIDE_LEFT_ADMIN">            
                 <SlotApp v-slot:LAYOUT_APP_SIDE_LEFT>
                     <div class="dash_content_main">
                         <MenuDash :isAdmin="DECODE_USER.isAdmin" />
@@ -69,12 +64,7 @@ export default defineComponent({
                     </div>
                 </SlotApp>
             </div>
-            <div class="basis-3/5 LAYOUT_APP_SIDE_RIGHT">
-                <!-- <div style="text-align: right; margin-bottom: 5%;">
-                    <button type="button" class="BTN_DANGER_1 py-2 px-4 rounded" @click="onLogout">
-                        Cerrar sesión
-                    </button>
-                </div> -->
+            <div class="basis-3/5 LAYOUT_APP_SIDE_RIGHT">              
 
                 <SlotApp v-slot:LAYOUT_APP_SIDE_RIGHT>
                     <div class="dash_content_main">
